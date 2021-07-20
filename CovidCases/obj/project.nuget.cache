@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "dIvIPece9MqHIJG05ZYa4CYje6aUO6Vb60HVRwpyLbw4Mo3Y5SBljQpsZj2SJY/DUVcqPofVDiB5Xv/hBSoGYw==",
+  "dgSpecHash": "IqyLSaxajm+9A8hiKFiZp8aI5AEuQfFgdQhsLGChqe+fGDAscy03WqZNMXIikmZUkjVP7iIX0R51bvD2TmrQYQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\edgar\\Documents\\domotek\\Covid\\CovidCases\\CovidCases.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\edgar\\.nuget\\packages\\csvhelper\\27.1.1\\csvhelper.27.1.1.nupkg.sha512",
+    "C:\\Users\\edgar\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\edgar\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\edgar\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
     "C:\\Users\\edgar\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
