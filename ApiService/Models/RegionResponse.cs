@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ApiService.Models
+﻿namespace ApiService.Models
 {
     public class RegionResponse
     {

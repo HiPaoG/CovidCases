@@ -4,20 +4,16 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using CovidCases.Models;
 using ApiService.Services;
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
-using System.Xml.Linq;
 using System.IO;
 using System.Xml;
 using System.Xml.Serialization;
 using System.Text;
-using System.ComponentModel;
 using CsvHelper;
 using System.Globalization;
-using CsvHelper.Configuration;
 using Microsoft.AspNetCore.StaticFiles;
 using CovidCases.Helpers;
 
@@ -25,12 +21,10 @@ namespace CovidCases.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
         private IReportsService _reportsService;
 
-        public HomeController(ILogger<HomeController> logger, IReportsService reportsService)
+        public HomeController(IReportsService reportsService)
         {
-            _logger = logger;
             _reportsService = reportsService;
         }
 
@@ -91,7 +85,7 @@ namespace CovidCases.Controllers
             return File(document, contentType, fileName+extension);
         }
 
-        public async Task<byte[]> ExportRegionsData(ExportType type)
+        private async Task<byte[]> ExportRegionsData(ExportType type)
         {
             byte[] document = null;
             var regionResponse = await _reportsService.GetRegionsReport(10);
@@ -116,7 +110,7 @@ namespace CovidCases.Controllers
             return document;
         }
 
-        public async Task<byte[]> ExportProvincesData(ExportType type, string iso)
+        private async Task<byte[]> ExportProvincesData(ExportType type, string iso)
         {
             byte[] document = null;
             var provinceResponse = await _reportsService.GetProvinceReport(iso, 10);

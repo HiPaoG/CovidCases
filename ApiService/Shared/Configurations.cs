@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ApiService.Shared
+﻿namespace ApiService.Shared
 {
     public class Configurations
     {
